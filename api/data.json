@@ -1,0 +1,38 @@
+{
+  "name": "imaw_shop",
+  "total_post": "13",
+  "follower": 29,
+  "following": 32,
+  "biography": "ขายกระเป๋า แฟชัน\nค่าส่ง 25 บาท ❗❗❗❗\nซื้อ 2 ชิ้นไป ลด 5%\nรับหิ้วกระเป๋า LYN ชิ้นละ 20 ไม่รวมส่ง\nหากสนใจทักไดเรคหรือไลน์ id: zmying ได้เลยนะคะ",
+  "image_profile": "../images/1.jpeg",
+  "post_list": [
+    {
+      "img_url": "../images/1.jpeg",
+      "post_url": "xxx"
+    },
+    {
+      "img_url": "../images/1.jpeg",
+      "post_url": "xxx"
+    },
+    {
+      "img_url": "../images/1.jpeg",
+      "post_url": "xxx"
+    },
+    {
+      "img_url": "../images/1.jpeg",
+      "post_url": "xxx"
+    },
+    {
+      "img_url": "../images/1.jpeg",
+      "post_url": "xxx"
+    },
+    {
+      "img_url": "../images/1.jpeg",
+      "post_url": "xxx"
+    },
+    {
+      "img_url": "../images/1.jpeg",
+      "post_url": "xxx"
+    }
+  ]
+}
