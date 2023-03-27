@@ -1,5 +1,7 @@
-import React from 'react';
-import { Button, Box, Grid, Typography } from "@mui/material";
+import React from "react";
+import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 
 import "./page.css"
 import data from "../data.json";
@@ -21,15 +23,15 @@ function Profile() {
         <img className="profile-img" src={data.image_profile} alt="profile-img"/>
       </Grid>
       <Grid container item xs={12} sm={8} rowSpacing={4}>
-        <Grid container spacing={2} item xs={12} alignItems="center">
+        <Grid container spacing={2} item xs={12} alignItems="center" className="profile-setting-btn">
           <Grid item>
             <Typography variant={"h5"}>{data.name}</Typography>
           </Grid>
-          <Grid item className='center'>
+          <Grid item className="center profile-btn">
             <Button sx={btnProfile}>แก้ไขโปรไฟล์</Button>
           </Grid>
-          <Grid item sx={{justifyContent: 'center'}}>
-            <Setting />
+          <Grid item className="profile-setting-btn">
+            <Button><Setting /></Button>
           </Grid>
         </Grid>
         <Grid container spacing={6} item xs={12} alignItems="start">

@@ -1,15 +1,15 @@
-import "./page.css"
-import React from 'react';
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
+import React from "react";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 
+import "./page.css";
 import data from "../data.json";
-import { Typography } from "@mui/material";
+import whiteHeart from "../images/w-heart.png";
+import whiteComment from "../images/w-comments.png";
 
-function Page() {
-  return ( 
+function PostList() {
+  return (
     <Grid
       spacing={0.5} 
       container
@@ -24,13 +24,13 @@ function Page() {
               <img className="img-body" src={post.img_url} alt={`img+${index}`}/>
               <Box className="backdrop"></Box>
               <Box className="img-icon">
-                <Grid container spacing={3}>
-                  <Grid item container justifyContent="center" spacing={0.5} xs={12} md={6}>
-                    <Grid item><FavoriteIcon/></Grid>
+                <Grid container spacing={4}>
+                  <Grid item className="img-text" container alignItems="center" justifyContent="center" spacing={0.5} xs={12} md={6}>
+                    <Grid item><img src={whiteHeart} alt="white-favorite"/></Grid>
                     <Grid item><Typography>{post.like}</Typography></Grid>
                   </Grid>
-                  <Grid item container justifyContent="center" spacing={0.5} xs={12} md={6}>
-                    <Grid item><ChatBubbleIcon/></Grid>
+                  <Grid item className="img-text" container alignItems="center" justifyContent="center" spacing={0.5} xs={12} md={6}>
+                    <Grid item><img src={whiteComment} alt="white-heart"/></Grid>
                     <Grid item><Typography>{post.like}</Typography></Grid>
                   </Grid>
                 </Grid>
@@ -42,4 +42,5 @@ function Page() {
     </Grid>
   );
 }
-export default Page;
+
+export default PostList;
